@@ -11,12 +11,12 @@
 <body>
     <div class="container">
         <div class="card">
-            <img id="music_image" src="img/1.jpeg" alt="">
-            <audio id="music_audio" src="mp3/1.mp3"></audio>
-            <div class="card-body">
-                <div id="music_info" class="text-center">
-                    <div id="music_title" class="fw-medium fs-2">Boşver - Nilüfer</div>
-                    <div id="music_singer" class="fw-medium fs-4">Nilüfer</div>
+            <img id="music_image" src="" alt="">
+            <audio id="music_audio" src=""></audio>
+            <div class="card-body text-center">
+                <div id="music_info">
+                    <div id="music_title" class="fw-medium fs-3"></div>
+                    <div id="music_singer" class="fw-medium fs-4"></div>
                 </div>
                 <div id="progress" class="my-3">
                     <input id="progress_bar" type="range" class="form-range">
@@ -25,21 +25,32 @@
                         <div id="duration">00:00</div>
                     </div>
                 </div>
+                <div id="music_controls">
+                    <button id="prev" type="button" class="btn btn-danger">
+                        <i class="fa-solid fa-backward fa-sm"></i>
+                    </button>
+                    <button id="play" type="button" class="btn btn-danger px-3 py-2 mx-2">
+                        <i class="fa-solid fa-play fa-xl"></i>
+                    </button>
+                    <button id="next" type="button" class="btn btn-danger">
+                        <i class="fa-solid fa-forward fa-sm"></i>
+                    </button>
+                </div>
             </div>
             <div class="card-footer d-flex justify-content-between">
                 <button class="btn btn-danger rounded-1" data-bs-target="#music_list" data-bs-toggle="collapse">
                     <i class="fa-solid fa-bars"></i>
                 </button>                    
                 <div id="volume" class="d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn btn-danger px-2 py-1">
+                    <button id="volume_icon" type="button" class="btn btn-danger px-2 py-1">
                         <i class="fa-solid fa-volume-high fa-sm"></i>
                     </button>                    
                     <input id="volume_bar" type="range" class="form-range ms-2">
                 </div>
             </div>
-            <div id="music_list" class="collapse show">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between">
+            <div id="music_list" class="collapse">
+                <ul  class="list-group list-group-flush">
+                    <!-- <li class="list-group-item d-flex justify-content-between">
                         <div class="fw-medium">Nilüfer - Boşver</div>
                         <div class="badge bg-danger">00:00</div>
                     </li>
@@ -50,14 +61,14 @@
                     <li class="list-group-item d-flex justify-content-between">
                         <div class="fw-medium">Nilüfer - Boşver</div>
                         <div class="badge bg-danger">00:00</div>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="music.js"></script>
-    <script src="musicpalyer.js"></script>
+    <script src="musicplayer.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

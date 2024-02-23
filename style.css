@@ -5,3 +5,11 @@
     transform: translate(-50%,-50%);
     width: 400px;
 }
+li.active{
+    background-color: crimson!important;
+    border-color: crimson!important;
+    color: white;
+}
+li:hover{
+    cursor: pointer;
+}
